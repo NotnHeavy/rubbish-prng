@@ -22,7 +22,6 @@
 //   ret
 // rdrand:
 //  rdrand eax
-
 static const char buffer[] = "\x8B\x44\x24\x08\x0F\xC7\xF8\xC3\x0F\xC7\xF0\xC3";
 
 static Handle SDKCall_rdseed;
