@@ -1,0 +1,32 @@
+"Games"
+{
+    "*"
+    {
+		"Offsets"
+		{
+			"OS"
+			{
+				"windows"	"0"
+				"windows64"	"1"
+
+				"linux"		"2"
+				"linux64"	"3"
+			}
+		}
+        "Signatures"
+        {
+			"ImageBase"
+			{
+				"library"	"server"
+
+				// MZ header
+				"windows"	"\x4D\x5A"
+				"window64"	"\x4D\x5A"
+
+				// ELF header
+				"linux"		"\x7F\x45\x4C\x46"
+				"linux64"	"\x7F\x45\x4C\x46"
+			}
+        }
+    }
+}
