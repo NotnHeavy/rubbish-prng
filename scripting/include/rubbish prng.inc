@@ -16,13 +16,14 @@
 // GLOBALS                                                                  //
 //////////////////////////////////////////////////////////////////////////////
 
-static const char buffer[] = "\x8B\x44\x24\x08\x0F\xC7\xF8\xC3\x0F\xC7\xF0\xC3";	// rdseed:
-																					//   mov eax, [esp/rsp + 0x08]
-																					//   rdseed eax
-																					//   ret
-																					// rdrand:
-																					//  rdrand eax
+// rdseed:
+//   mov eax, [esp/rsp + 0x08]
+//   rdseed eax
+//   ret
+// rdrand:
+//  rdrand eax
 
+static const char buffer[] = "\x8B\x44\x24\x08\x0F\xC7\xF8\xC3\x0F\xC7\xF0\xC3";
 
 static Handle SDKCall_rdseed;
 static Handle SDKCall_rdrand;
